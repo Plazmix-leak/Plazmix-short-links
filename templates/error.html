@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru" >
+<head>
+  <meta charset="UTF-8">
+<meta name="apple-mobile-web-app-title" content="Plazmix">
+    <link rel="apple-touch-icon" sizes="124x124" href="https://plazmix.net/static/img/logo/default.png">
+    <link rel="icon" type="image/png" href="https://plazmix.net/static/img/logo/default.png">
+    <meta name="description" content="{{ error_comment }}" />
+    <meta property="og:title" content="Plazmix | Error..."/>
+    <meta property="og:description" content="Ссылка не найдена!"/>
+    <meta property="og:image" content="https://plazmix.net/static/img/background/landing/4.png"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content= "https://plzm.xyz/" />
+<link rel="shortcut icon" type="image/x-icon" href="" />
+    <meta name="description" content="Система коротких ссылок проекта Plazmix Network" />
+  <title>ОШИБКА...</title>
+  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" />
+    <script src="{{  url_for('static', filename='main.js') }}"></script>
+</head>
+<body translate="no" >
+  <div class="bg">
+  <div id="overlay-header">
+    <div class="text-center text-white">
+        <p>{{ error_comment }}</p>
+    </div>
+  </div>
+  </div>
+</body>
+</html>

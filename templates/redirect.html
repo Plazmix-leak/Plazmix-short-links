@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru" >
+<head>
+  <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <meta name="apple-mobile-web-app-title" content="Plazmix">
+  <link rel="apple-touch-icon" sizes="124x124" href="https://plazmix.net/static/img/logo/default.png">
+  <link rel="icon" type="image/png" href="https://plazmix.net/static/img/logo/default.png">
+  <meta name="description" content="Система коротких ссылок проекта Plazmix Network" />
+  <meta property="og:title" content="Plazmix Short Links"/>
+  <meta property="og:description" content="Plazmix Network - русскоязычный майнкрафт проект с большим колличеством качественный и интересных мини-игр.
+                                   ip: mc.plazmix.net (1.8.x - новейшая)
+                                   Данная ссылка принадлежит системе коротких ссылок проекта"/>
+  <meta property="og:image" content="https://plazmix.net/static/img/background/landing/4.png"/>
+  <meta property="og:type" content="photo"/>
+  <meta property="og:url" content= "https://plzm.xyz/{{ link.uri }}" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://plazmix.net/static/img/background/landing/4.png">
+    <meta name="twitter:image:src" content="https://plazmix.net/static/img/background/landing/4.png">
+     <meta name="theme-color" content="#6600cc">
+    <meta name="twitter:description" content="Plazmix Network - русскоязычный майнкрафт проект с большим колличеством качественный и интересных мини-игр.
+                                   ip: mc.plazmix.net (1.8.x - новейшая)
+
+                                   Данная ссылка принадлежит системе коротких ссылок проекта">
+    <link type="application/json+oembed" href="https://plzm.xyz/cardjson/{{ link.uri }}.json">
+  <title>Plazmix Network | Переадресация...</title>
+</head>
+  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="{{  url_for('static', filename='main.js') }}?v=0.0.2"></script>
+<body translate="no" >
+  <div class="bg">
+  <div id="overlay-header">
+    <div class="text-center center">
+      <div class="container">
+        <div class="row spinner-border text-light" role="status">
+          <span class="sr-only">Загрузка...</span>
+        </div>
+      </div>
+    </div>
+  </div>
+      <input type="hidden" id="uri" value="{{ link.uri }}">
+  <div class="foot-message">
+    <p class="text-white" id="comment">Подождите немного, вы будете переадресованы через <a id="time">загрузка...</a></p>
+  </div>
+</div>
+</body>
+</html>
